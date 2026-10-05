@@ -16,7 +16,6 @@ class User {
     this.role = role === 'admin' ? 'admin' : 'user';
   }
 
-  // Sanitized view ensuring password is never exposed in JSON responses
   toJSON() {
     return {
       id: this.id,
@@ -26,7 +25,7 @@ class User {
   }
 }
 
-// In-memory data store for standalone testing & prototype execution
+// In-memory store for isolated prototype execution
 const usersStore = [];
 
 module.exports = {
