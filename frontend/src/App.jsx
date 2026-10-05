@@ -1,9 +1,9 @@
-import TaskList from './TaskList';
+import TaskManager from './TaskManager';
 
 function App() {
   return (
     <div>
-      <TaskList />
+      <TaskManager />
     </div>
   );
 }
