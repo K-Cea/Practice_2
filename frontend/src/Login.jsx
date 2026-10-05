@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function Register() {
+export default function Login() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -19,12 +19,12 @@ export default function Register() {
     }
 
     setError('');
-    alert('Success! Registration form is valid.');
+    alert('Success! Login form is valid.');
   };
 
   return (
     <div style={{ padding: '20px' }}>
-      <h2>Register</h2>
+      <h2>Login</h2>
       {error && <p style={{ color: 'red' }}>{error}</p>}
       <form onSubmit={handleSubmit}>
         <div>
@@ -45,7 +45,7 @@ export default function Register() {
           />
         </div>
         <br />
-        <button type="submit">Sign Up</button>
+        <button type="submit">Log In</button>
       </form>
     </div>
   );
